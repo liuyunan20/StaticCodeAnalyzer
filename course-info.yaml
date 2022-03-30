@@ -7,4 +7,5 @@ summary: In this project, you will create a simple static analyzer tool that fin
 programming_language: Python
 content:
 - Static Code Analyzer
+- Topics
 mode: Study
