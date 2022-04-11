@@ -3,3 +3,4 @@ content:
 - Method overriding
 - Slicing
 - Custom generators
+- User-defined exceptions
