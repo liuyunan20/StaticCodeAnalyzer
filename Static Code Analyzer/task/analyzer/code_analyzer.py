@@ -16,6 +16,18 @@ def check_error(path, code, num, blank_line):
         print(f"{path}: Line {num}: S005 TODO found")
     if code.strip("\n") != "" and blank_line > 2:
         print(f"{path}: Line {num}: S006 More than two blank lines used before this line")
+    if code.strip().startswith("class"):
+        if re.match(r'class\s{2,}.*', code.strip()):
+            print(f"{path}: Line {num}: S007 Too many spaces after 'class'")
+        class_name = code.lstrip("class").rstrip(":").strip("\n").lstrip()
+        if not re.match(r'[A-Z]', class_name):
+            print(f"{path}: Line {num}: S008 Class name '{class_name}' should use CamelCase")
+    if code.strip().startswith("def"):
+        if re.match(r'def\s{2,}.*', code.strip()):
+            print(f"{path}: Line {num}: S007 Too many spaces after 'def'")
+        func_name = code.lstrip("def").rstrip(":").strip("\n").lstrip()
+        if not re.match(r'[a-z_]', func_name):
+            print(f"{path}: Line {num}: S009 Function name '{func_name}' should use snake_case")
 
 
 def get_path():

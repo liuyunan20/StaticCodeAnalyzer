@@ -79,53 +79,6 @@ files:
         print('NO TODO HERE;;')
         pass; # Todo something
   learner_created: false
-- name: test/this_stage/test_7.py
-  visible: false
-  text: |
-    class CorrectOne:
-        pass
-
-
-    class spaces:
-        pass
-
-
-    class snake_case:
-        pass
-
-
-    class Inheritance(CorrectOne):
-        pass
-  learner_created: false
-- name: test/this_stage/test_8.py
-  visible: false
-  text: |
-    class      CorrectOne:
-        pass
-
-
-    class Inheritance(CorrectOne):
-        @staticmethod
-        def  test():
-            print("hello")
-  learner_created: false
-- name: test/this_stage/test_9.py
-  visible: false
-  text: |
-    def __init__():
-        def correct_function():
-            pass
-
-        pass
-
-
-    def Wow():
-        pass
-
-
-    def CamelCase():
-        pass
-  learner_created: false
 - name: tests.py
   visible: false
   text: |
@@ -429,6 +382,56 @@ files:
     if __name__ == '__main__':
         AnalyzerTest("analyzer.code_analyzer").run_tests()
   learner_created: false
+- name: test/this_stage/test_7.py
+  visible: false
+  text: |
+    class CorrectOne:
+        pass
+
+
+    class spaces:
+        pass
+
+
+    class snake_case:
+        pass
+
+
+    class Inheritance(CorrectOne):
+        pass
+  learner_created: false
+- name: test/this_stage/test_9.py
+  visible: false
+  text: |
+    def __init__():
+        def correct_function():
+            pass
+
+        pass
+
+
+    def Wow():
+        pass
+
+
+    def CamelCase():
+        pass
+  learner_created: false
+- name: test/this_stage/test_8.py
+  visible: false
+  text: |
+    class      CorrectOne:
+        pass
+
+
+    class Inheritance(CorrectOne):
+        @staticmethod
+        def  test():
+            print("hello")
+  learner_created: false
 feedback_link: https://hyperskill.org/learn/step/9906#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 19 Apr 2022 18:59:21 UTC
 record: -1
