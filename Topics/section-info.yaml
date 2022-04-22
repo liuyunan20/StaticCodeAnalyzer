@@ -5,3 +5,4 @@ content:
 - Custom generators
 - User-defined exceptions
 - Experiments with Python shell
+- ast module
